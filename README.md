@@ -1,6 +1,6 @@
 # Operational and tactical levers to reduce carbon emissions in temperature-sensitive freight transportation for pharmaceuticals
  
-*(c) 2023 MIT Center for Transportation and Logistics - Dr. Matthias Winkenbach, Jonas Lehmann, Dr. Milena Janjevic*
+*(c) 2023 MIT Center for Transportation and Logistics - Jonas Lehmann, Dr. Matthias Winkenbach, Dr. Milena Janjevic*
 ## About
 
 This tool is a demo implementation of the methodology presented in the report of the [MIT Center for Transportation and Logistics](https://ctl.mit.edu). It presents an estimation and allocation 
