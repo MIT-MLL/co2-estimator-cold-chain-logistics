@@ -3,7 +3,8 @@
 *(c) 2023 MIT Center for Transportation and Logistics - Jonas Lehmann, Dr. Matthias Winkenbach, Dr. Milena Janjevic*
 ## About
 
-This tool is a demo implementation of the methodology presented in the report of the [MIT Center for Transportation and Logistics](https://ctl.mit.edu). It presents an estimation and allocation 
+This tool is a demo implementation of the methodology presented in this [report](https://dspace.mit.edu/handle/1721.1/151744)
+of the [MIT Center for Transportation and Logistics](https://ctl.mit.edu). It presents an estimation and allocation 
 tool for carbon emissions for shipments in cold chain logistics. Shippers and providers of cooling containers may
 use this tool to assess the carbon footprint of a shipment based on the fixed and variable emissions of the cooling
 containers used as well as the transportation modes used by the carrier. We refer to the report for an explanation of the 
@@ -80,8 +81,9 @@ Please cite via
 
 ```
 @techreport{CTL2023CO2COLDCHAINS,
-    title = {{Operational and tactical levers to reduce carbon emissions in temperature-sensitive freight transportation for pharmaceuticals}},
+    title = {Operational and tactical levers to reduce carbon emissions in temperature-sensitive freight transportation for pharmaceuticals},
     year = {2023},
     author = {Lehmann, Jonas; Winkenbach, Matthias; Janjevic, Milena},
-    institution = {MIT Center for Transportation and Logistics}}
+    institution = {MIT Center for Transportation and Logistics},
+    url = {https://dspace.mit.edu/handle/1721.1/151744}}
 ```
