@@ -39,12 +39,15 @@ conda create --name co2_estimation_tool --file requirements.txt
 
 
 Optional step for users wishing to use the Excel Macro and who use Mac:
-4. Open `02_Models/automateCO2calculationPythonScript` in `Automator`. Enter the direct link to the anaconda environment 
+4. Open `ExcelModels/automateCO2calculationPythonScript` in `Automator`. Enter the direct link to the anaconda environment 
 and the Excel spreadsheet in the github repo like this (replace `my-user` with your user name):
 ``````
 /Users/my-user/anaconda3/envs/co2_estimation_tool/bin/python /Users/my-user/GitHub/co2-estimator-cold-chain-logistics/main.py
 ``````
 
+5. Open the Excel Workbook `ExcelModels/CO2 Emissions Calculator - 2023.xlsm`. Under the `Development` Tab, 
+click `Macros` to edit the macro `RunCO2CalculationPythonScript`. Enter the link to the github folder to point the macro
+to the Automator Application.
 
 Windows users may create a custom Macro calling `main.py` and link it to the `Calculate Emissions` button on the `Emissions Calculator` 
 sheet in `CO2 Emissions Calculator - 2023.xlsm`
