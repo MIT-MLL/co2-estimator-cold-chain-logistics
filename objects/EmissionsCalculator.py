@@ -237,8 +237,9 @@ class EmissionsCalculator:
         return emissions_kg
 
 
-    def calculate_maritime_freight_emissions(self, shipment_weight_kg, shipment_volume_m3, origin_latlong, destination_latlong,
-                                            parameter_dict, distance_km=None):
+    def calculate_maritime_freight_emissions(self, shipment_weight_kg, shipment_volume_m3,
+                                             origin_latlong, destination_latlong,
+                                             parameter_dict, distance_km=None):
         """
         Calculates the emissions from road freight transportation
         :param shipment_weight_kg: the weight of the shipment
@@ -251,6 +252,9 @@ class EmissionsCalculator:
         if distance_km==None:
             origin_longlat = origin_latlong[::-1]
             destination_longlat = destination_latlong[::-1]
+
+            origin_longlat = list(origin_longlat)
+            destination_longlat = list(destination_longlat)
 
             distance_km = sr.searoute(origin_longlat, destination_longlat, units="km")['properties']['length']
 

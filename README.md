@@ -32,8 +32,11 @@ git clone https://github.com/MIT-MLL/co2-estimator-cold-chain-logistics.git
 2. Install [anaconda](https://www.anaconda.com/). Create custom anaconda environment by opening the terminal and 
 running the following command:
 ``````
-conda create --name co2_estimation_tool --file requirements.txt
+conda create --name co2_estimation_tool
 ``````
+Once activated, install the packages in `file requirements.txt`.
+
+
 
 3. Insert API credentials of active NTMCalc Advanced 4.0 membership and Google Maps in `parameters/authentification_parameters.py`
 
@@ -45,9 +48,13 @@ and the Excel spreadsheet in the github repo like this (replace `my-user` with y
 /Users/my-user/anaconda3/envs/co2_estimation_tool/bin/python /Users/my-user/GitHub/co2-estimator-cold-chain-logistics/main.py
 ``````
 
-5. Open the Excel Workbook `ExcelModels/CO2 Emissions Calculator - 2023.xlsm`. Under the `Development` Tab, 
-click `Macros` to edit the macro `RunCO2CalculationPythonScript`. Enter the link to the github folder to point the macro
-to the Automator Application.
+5. Open the Excel Workbook `ExcelModels/CO2 Emissions Calculator - 2023.xlsm`. 
+
+* 5.1 Under the `Development` Tab, click `Macros` to edit the macro `RunCO2CalculationPythonScript`. Enter the link to 
+the github folder to point the macro to the Automator Application.
+
+* 5.2 Go to the sheet `Script Output Emissions Data`, via `Data` &rarr; `Get Data` &rarr; `Data Source Settings` to the
+new path of the `transport_emissions_output.xlsx` file in the github folder.
 
 Windows users may create a custom Macro calling `main.py` and link it to the `Calculate Emissions` button on the `Emissions Calculator` 
 sheet in `CO2 Emissions Calculator - 2023.xlsm`
